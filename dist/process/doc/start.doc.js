@@ -13,7 +13,6 @@ class StartDoc extends command_1.Command {
     constructor() {
         super();
         this.docShared = new doc_shared_1.DocShared();
-        this.add = 0;
     }
     start(port = 1000) {
         this.print.title(doc_const_1.VERSION, 'Urxnium Doc');

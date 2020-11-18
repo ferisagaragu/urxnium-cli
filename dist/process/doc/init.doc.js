@@ -1,15 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.InitDoc = void 0;
-const print_1 = require("../../core/log/print");
-const file_1 = require("../../core/io/file");
 const doc_data_1 = require("../../assets/data/doc.data");
 const doc_const_1 = require("./const/doc.const");
-const inquirer = require('inquirer');
-class InitDoc {
+const command_1 = require("../../core/interface/command");
+class InitDoc extends command_1.Command {
     constructor() {
-        this.file = new file_1.File();
-        this.print = new print_1.Print();
+        super();
     }
     init() {
         this.getDocumentationType((type) => {
@@ -31,7 +28,7 @@ class InitDoc {
             this.print.information('{Urxnium Doc}'.blue + ' is already init');
             return;
         }
-        inquirer.prompt([
+        this.inquirer.prompt([
             {
                 name: 'type',
                 type: 'list',
@@ -43,7 +40,7 @@ class InitDoc {
         });
     }
     getRestQuestions(deleteFunctional = true, onFinish) {
-        inquirer.prompt([
+        this.inquirer.prompt([
             {
                 name: 'title',
                 type: 'input',
@@ -66,7 +63,7 @@ class InitDoc {
         });
     }
     getFunctionalQuestions(deleteRest = true) {
-        inquirer.prompt([
+        this.inquirer.prompt([
             {
                 name: 'title',
                 type: 'input',

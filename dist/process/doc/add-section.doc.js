@@ -1,23 +1,20 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AddSectionDoc = void 0;
-const file_1 = require("../../core/io/file");
-const print_1 = require("../../core/log/print");
 const doc_const_1 = require("./const/doc.const");
 const doc_data_1 = require("../../assets/data/doc.data");
 const doc_shared_1 = require("./shared/doc.shared");
-const inquirer = require('inquirer');
-class AddSectionDoc {
+const command_1 = require("../../core/interface/command");
+class AddSectionDoc extends command_1.Command {
     constructor() {
-        this.file = new file_1.File();
-        this.print = new print_1.Print();
+        super();
         this.docShared = new doc_shared_1.DocShared();
     }
     addSection() {
         if (!this.docShared.getMain()) {
             return;
         }
-        inquirer.prompt(this.getQuestions()).then((resp) => {
+        this.inquirer.prompt(this.getQuestions()).then((resp) => {
             var _a;
             const name = resp.name.toString().toLowerCase();
             doc_data_1.section.name = resp.name;

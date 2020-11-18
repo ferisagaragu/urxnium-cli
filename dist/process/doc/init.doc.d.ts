@@ -1,6 +1,5 @@
-export declare class InitDoc {
-    private file;
-    private print;
+import { Command } from '../../core/interface/command';
+export declare class InitDoc extends Command {
     constructor();
     init(): void;
     private getDocumentationType;

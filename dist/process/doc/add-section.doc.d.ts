@@ -1,6 +1,5 @@
-export declare class AddSectionDoc {
-    private file;
-    private print;
+import { Command } from '../../core/interface/command';
+export declare class AddSectionDoc extends Command {
     private docShared;
     constructor();
     addSection(): void;

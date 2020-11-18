@@ -1,6 +1,5 @@
-export declare class AddDocumentDoc {
-    private file;
-    private print;
+import { Command } from '../../core/interface/command';
+export declare class AddDocumentDoc extends Command {
     private docShared;
     constructor();
     addDocument(): void;

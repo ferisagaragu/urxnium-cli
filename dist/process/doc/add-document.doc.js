@@ -1,16 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AddDocumentDoc = void 0;
-const file_1 = require("../../core/io/file");
-const print_1 = require("../../core/log/print");
 const doc_shared_1 = require("./shared/doc.shared");
 const doc_const_1 = require("./const/doc.const");
 const doc_data_1 = require("../../assets/data/doc.data");
-const inquirer = require('inquirer');
-class AddDocumentDoc {
+const command_1 = require("../../core/interface/command");
+class AddDocumentDoc extends command_1.Command {
     constructor() {
-        this.file = new file_1.File();
-        this.print = new print_1.Print();
+        super();
         this.docShared = new doc_shared_1.DocShared();
     }
     addDocument() {
@@ -24,7 +21,7 @@ class AddDocumentDoc {
         });
     }
     getDocumentRestQuestions(sectionPath, sectionName) {
-        inquirer.prompt([
+        this.inquirer.prompt([
             {
                 name: 'name',
                 type: 'input',
@@ -51,7 +48,7 @@ class AddDocumentDoc {
         });
     }
     getDocumentFunctionalQuestions(sectionPath, sectionName) {
-        inquirer.prompt([
+        this.inquirer.prompt([
             {
                 name: 'name',
                 type: 'input',
@@ -120,7 +117,7 @@ class AddDocumentDoc {
             if (!showQuestions) {
                 return;
             }
-            inquirer.prompt([
+            this.inquirer.prompt([
                 {
                     name: 'sectionType',
                     type: 'list',
@@ -134,7 +131,7 @@ class AddDocumentDoc {
     }
     getDocType(onSelectType) {
         if (this.docShared.getProjectType() === 'both') {
-            inquirer.prompt([
+            this.inquirer.prompt([
                 {
                     name: 'sectionType',
                     type: 'list',

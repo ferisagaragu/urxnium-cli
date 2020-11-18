@@ -1,48 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53ed8080-5e6a-43c2-a835-19ff1bef8090" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/process/doc/add-credential.doc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/core/interface/command.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/core/interface/command.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/core/interface/command.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/core/interface/command.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/core/interpret/json.interpret.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/core/interpret/json.interpret.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/process/doc/const/doc.const.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/const/doc.const.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/process/doc/const/doc.const.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/const/doc.const.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/process/doc/shared/doc.shared.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/shared/doc.shared.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/process/doc/shared/doc.shared.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/shared/doc.shared.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/interface/command.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/interface/command.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/process/doc/add-document.doc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/doc/add-document.doc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/process/doc/add-section.doc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/doc/add-section.doc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/process/doc/const/doc.const.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/doc/const/doc.const.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/process/doc/init.doc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/doc/init.doc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/process/doc/shared/doc.shared.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/doc/shared/doc.shared.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/process/doc/start.doc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/doc/start.doc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/urxm" beforeDir="false" afterPath="$PROJECT_DIR$/urxm-t" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/urxm.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/urxm-t.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/urxm.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/urxm-t.ps1" afterDir="false" />
+    <list default="true" id="53ed8080-5e6a-43c2-a835-19ff1bef8090" name="Default Changelist" comment="se añadio una interfaz para comandos">
+      <change beforePath="$PROJECT_DIR$/dist/process/doc/add-document.doc.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/add-document.doc.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/process/doc/add-document.doc.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/add-document.doc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/process/doc/add-section.doc.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/add-section.doc.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/process/doc/add-section.doc.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/add-section.doc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/process/doc/init.doc.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/init.doc.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/process/doc/init.doc.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/init.doc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/process/doc/start.doc.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/start.doc.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/process/doc/start.doc.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/start.doc.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,8 +79,16 @@
       <updated>1605457891443</updated>
       <workItem from="1605457893886" duration="35243000" />
       <workItem from="1605625679055" duration="44744000" />
-      <workItem from="1605712196958" duration="5718000" />
+      <workItem from="1605712196958" duration="5949000" />
     </task>
+    <task id="LOCAL-00001" summary="se añadio una interfaz para comandos">
+      <created>1605719006643</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605719006643</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +106,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="se añadio una interfaz para comandos" />
+    <option name="LAST_COMMIT_MESSAGE" value="se añadio una interfaz para comandos" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605626330046">
@@ -152,30 +132,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="758" y="215" key="Github.UntrackedFilesDialog/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605674124269" />
-    <state width="1899" height="158" key="GridCell.Tab.0.bottom" timestamp="1605714647397">
+    <state width="1899" height="158" key="GridCell.Tab.0.bottom" timestamp="1605719130153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="158" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605653779565" />
-    <state width="1899" height="158" key="GridCell.Tab.0.bottom/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605714647397" />
+    <state width="1899" height="158" key="GridCell.Tab.0.bottom/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605719130153" />
     <state width="1899" height="158" key="GridCell.Tab.0.bottom/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605627525591" />
-    <state width="1899" height="158" key="GridCell.Tab.0.center" timestamp="1605714647397">
+    <state width="1899" height="158" key="GridCell.Tab.0.center" timestamp="1605719130153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="158" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605653779565" />
-    <state width="1899" height="158" key="GridCell.Tab.0.center/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605714647397" />
+    <state width="1899" height="158" key="GridCell.Tab.0.center/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605719130153" />
     <state width="1899" height="158" key="GridCell.Tab.0.center/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605627525591" />
-    <state width="1899" height="158" key="GridCell.Tab.0.left" timestamp="1605714647396">
+    <state width="1899" height="158" key="GridCell.Tab.0.left" timestamp="1605719130153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="158" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605653779565" />
-    <state width="1899" height="158" key="GridCell.Tab.0.left/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605714647396" />
+    <state width="1899" height="158" key="GridCell.Tab.0.left/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605719130153" />
     <state width="1899" height="158" key="GridCell.Tab.0.left/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605627525591" />
-    <state width="1899" height="158" key="GridCell.Tab.0.right" timestamp="1605714647397">
+    <state width="1899" height="158" key="GridCell.Tab.0.right" timestamp="1605719130153">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1345" height="158" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605653779565" />
-    <state width="1899" height="158" key="GridCell.Tab.0.right/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605714647397" />
+    <state width="1899" height="158" key="GridCell.Tab.0.right/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605719130153" />
     <state width="1899" height="158" key="GridCell.Tab.0.right/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605627525591" />
+    <state x="711" y="240" key="RollbackChangesDialog" timestamp="1605719115494">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="711" y="240" key="RollbackChangesDialog/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605719115494" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1605462705662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
