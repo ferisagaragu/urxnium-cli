@@ -7,7 +7,11 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1kKmu2nj3BNLhFfjCljWrmiwJFR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -61,12 +65,15 @@
       <option name="presentableId" value="Default" />
       <updated>1605457891443</updated>
       <workItem from="1605457893886" duration="35243000" />
-      <workItem from="1605625679055" duration="44221000" />
+      <workItem from="1605625679055" duration="44744000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605626330046">
@@ -78,10 +85,19 @@
     </state>
     <state x="719" y="321" key="#com.intellij.fileTypes.FileTypeChooser/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605659174090" />
     <state x="719" y="321" key="#com.intellij.fileTypes.FileTypeChooser/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605626462596" />
-    <state x="818" y="414" key="FileChooserDialogImpl" timestamp="1605477874898">
+    <state x="818" y="414" key="FileChooserDialogImpl" timestamp="1605674094733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="818" y="414" key="FileChooserDialogImpl/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605674094733" />
     <state x="818" y="414" key="FileChooserDialogImpl/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605477874898" />
+    <state x="834" y="417" key="Github.ShareDialog" timestamp="1605674115591">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="834" y="417" key="Github.ShareDialog/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605674115591" />
+    <state x="758" y="215" key="Github.UntrackedFilesDialog" timestamp="1605674124269">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="758" y="215" key="Github.UntrackedFilesDialog/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605674124269" />
     <state width="1899" height="158" key="GridCell.Tab.0.bottom" timestamp="1605666894181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -128,5 +144,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1605655057617" />
+    <state x="790" y="310" key="svn.repositoryBrowser" timestamp="1605674097844">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="310" key="svn.repositoryBrowser/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605674097844" />
+    <state x="770" y="293" key="svn4idea.import.options" timestamp="1605674096733">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="770" y="293" key="svn4idea.import.options/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605674096733" />
   </component>
 </project>
