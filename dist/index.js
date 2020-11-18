@@ -13,6 +13,7 @@ const init_doc_1 = require("./process/doc/init.doc");
 const add_section_doc_1 = require("./process/doc/add-section.doc");
 const add_document_doc_1 = require("./process/doc/add-document.doc");
 const start_doc_1 = require("./process/doc/start.doc");
+const add_credential_doc_1 = require("./process/doc/add-credential.doc");
 const system = new system_1.System();
 const print = new print_1.Print();
 if (system.getParameters().length > 0) {
@@ -51,6 +52,10 @@ if (system.getParameters().length > 0) {
                             case 'document':
                             case 'd':
                                 new add_document_doc_1.AddDocumentDoc().addDocument();
+                                break;
+                            case 'credential':
+                            case 'c':
+                                new add_credential_doc_1.AddCredentialDoc().addCredential();
                                 break;
                             default:
                                 print.error('command was not fount');

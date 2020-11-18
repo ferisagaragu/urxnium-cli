@@ -1,20 +1,14 @@
-import { File } from '../../core/io/file';
-import { Print } from '../../core/log/print';
 import { DocShared } from './shared/doc.shared';
 import { BASE_DIR } from './const/doc.const';
 import { documentFunctional, documentREST } from '../../assets/data/doc.data';
+import { Command } from '../../core/interface/command';
 
-const inquirer = require('inquirer');
+export class AddDocumentDoc extends Command {
 
-export class AddDocumentDoc {
-
-	private file: File;
-	private print: Print;
 	private docShared: DocShared;
 
 	constructor() {
-		this.file = new File();
-		this.print = new Print();
+		super()
 		this.docShared = new DocShared();
 	}
 
@@ -29,7 +23,7 @@ export class AddDocumentDoc {
 	}
 
 	private getDocumentRestQuestions(sectionPath: string, sectionName: string): void {
-		inquirer.prompt([
+		this.inquirer.prompt([
 			{
 				name: 'name',
 				type: 'input',
@@ -67,7 +61,7 @@ export class AddDocumentDoc {
 	}
 
 	private getDocumentFunctionalQuestions(sectionPath: string, sectionName: string) {
-		inquirer.prompt([
+		this.inquirer.prompt([
 			{
 				name: 'name',
 				type: 'input',
@@ -165,7 +159,7 @@ export class AddDocumentDoc {
 				return;
 			}
 
-			inquirer.prompt([
+			this.inquirer.prompt([
 				{
 					name: 'sectionType',
 					type: 'list',
@@ -184,7 +178,7 @@ export class AddDocumentDoc {
 
 	private getDocType(onSelectType: Function): void {
 		if (this.docShared.getProjectType() === 'both') {
-			inquirer.prompt([
+			this.inquirer.prompt([
 				{
 					name: 'sectionType',
 					type: 'list',

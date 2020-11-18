@@ -4,18 +4,14 @@ import { Command } from '../../core/interface/command';
 import path from 'path';
 import { DocShared } from './shared/doc.shared';
 
-//const open = require('open');
-
 export class StartDoc extends Command {
 
 	private docShared: DocShared;
-	private add: number;
 
 	constructor() {
 		super();
 
 		this.docShared = new DocShared();
-		this.add = 0;
 	}
 
 	start(port: number = 1000) {

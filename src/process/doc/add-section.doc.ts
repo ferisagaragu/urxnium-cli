@@ -1,20 +1,14 @@
-import { File } from '../../core/io/file';
-import { Print } from '../../core/log/print';
 import { BASE_DIR, MAIN_PATH } from './const/doc.const';
 import { section } from '../../assets/data/doc.data';
 import { DocShared } from './shared/doc.shared';
+import { Command } from '../../core/interface/command';
 
-const inquirer = require('inquirer');
+export class AddSectionDoc extends Command {
 
-export class AddSectionDoc {
-
-	private file: File;
-	private print: Print;
 	private docShared: DocShared;
 
 	constructor() {
-		this.file = new File();
-		this.print = new Print();
+		super();
 		this.docShared = new DocShared();
 	}
 
@@ -23,7 +17,7 @@ export class AddSectionDoc {
 			return;
 		}
 
-		inquirer.prompt(this.getQuestions()).then((resp: any) => {
+		this.inquirer.prompt(this.getQuestions()).then((resp: any) => {
 			const name = resp.name.toString().toLowerCase();
 			section.name = resp.name;
 

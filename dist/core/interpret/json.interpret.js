@@ -28,11 +28,11 @@ class JsonInterpret {
             this.print.information(`use shift + F5 your to reload explorer`);
         });
         this.print.success('was compiled success');
-        this.print.information('urxm doc is run on http://localhost:1000');
+        this.print.information('urxm-t doc is run on http://localhost:1000');
         this.print.information(`use shift + F5 your to reload explorer`);
     }
     createJsonOut() {
-        const json = this.readJson('.urxdoc/urxm.doc.json');
+        const json = this.readJson('.urxdoc/urxm-t.doc.json');
         const srcRest = [];
         if (this.isFilePath(json === null || json === void 0 ? void 0 : json.rest.credentials)) {
             json.rest.credentials = this.readJson(json.rest.credentials);
@@ -59,7 +59,7 @@ class JsonInterpret {
         }
         catch (e) {
             this.print.error('file not fount');
-            this.print.information('please run command -> urxm doc init');
+            this.print.information('please run command -> urxm-t doc init');
         }
         return null;
     }

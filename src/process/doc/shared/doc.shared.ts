@@ -26,6 +26,11 @@ export class DocShared {
 		return JSON.parse(this.file.readFile(MAIN_PATH));
 	}
 
+	setMain(data: any): void {
+		this.file.writeFile(MAIN_PATH, JSON.stringify(data, null, 2));
+		this.print.information(`${MAIN_PATH} was ` + '{updated}'.blue);
+	}
+
 	getProjectType(): string {
 		const main= this.getMain();
 

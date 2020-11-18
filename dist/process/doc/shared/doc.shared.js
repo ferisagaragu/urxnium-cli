@@ -19,6 +19,10 @@ class DocShared {
         }
         return JSON.parse(this.file.readFile(doc_const_1.MAIN_PATH));
     }
+    setMain(data) {
+        this.file.writeFile(doc_const_1.MAIN_PATH, JSON.stringify(data, null, 2));
+        this.print.information(`${doc_const_1.MAIN_PATH} was ` + '{updated}'.blue);
+    }
     getProjectType() {
         const main = this.getMain();
         if (main.hasOwnProperty('rest') &&

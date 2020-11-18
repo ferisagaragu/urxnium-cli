@@ -1,18 +1,11 @@
-import { Print } from '../../core/log/print';
-import { File } from '../../core/io/file';
 import { main } from '../../assets/data/doc.data';
 import { MAIN_PATH } from './const/doc.const';
+import { Command } from '../../core/interface/command';
 
-const inquirer = require('inquirer');
-
-export class InitDoc {
-
-	private file: File;
-	private print: Print;
+export class InitDoc extends Command {
 
 	constructor() {
-		this.file = new File();
-		this.print = new Print();
+		super();
 	}
 
 	init(): void {
@@ -39,7 +32,7 @@ export class InitDoc {
 			return;
 		}
 
-		inquirer.prompt([
+		this.inquirer.prompt([
 			{
 				name: 'type',
 				type: 'list',
@@ -55,7 +48,7 @@ export class InitDoc {
 		deleteFunctional: boolean = true,
 		onFinish?: Function
 	): void {
-		inquirer.prompt([
+		this.inquirer.prompt([
 			{
 				name: 'title',
 				type: 'input',
@@ -82,7 +75,7 @@ export class InitDoc {
 	private getFunctionalQuestions(
 		deleteRest: boolean = true
 	): void {
-		inquirer.prompt([
+		this.inquirer.prompt([
 			{
 				name: 'title',
 				type: 'input',

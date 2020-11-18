@@ -7,6 +7,7 @@ import { InitDoc } from './process/doc/init.doc';
 import { AddSectionDoc } from './process/doc/add-section.doc';
 import { AddDocumentDoc } from './process/doc/add-document.doc';
 import { StartDoc } from './process/doc/start.doc';
+import { AddCredentialDoc } from './process/doc/add-credential.doc';
 
 const system = new System();
 const print = new Print();
@@ -61,6 +62,11 @@ if (system.getParameters().length > 0) {
               case 'document':
               case 'd':
                 new AddDocumentDoc().addDocument();
+              break;
+
+              case 'credential':
+              case 'c':
+                new AddCredentialDoc().addCredential();
               break;
 
               default:
