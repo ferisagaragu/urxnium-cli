@@ -5,8 +5,9 @@ export const main: any = {
     icon: '',
     version: '0.0.1',
     baseUrl: 'http://localhost:1000',
+    baseUrlProd: 'http://localhost:1000',
     bookmarks: [],
-    credentials: '',
+    credentials: null,
     src: []
   },
   functional: {

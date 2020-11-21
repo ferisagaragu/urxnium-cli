@@ -10,4 +10,5 @@ export declare class StartDoc extends Command {
     private setUrxdoc;
     private compileSrc;
     private getJsonFile;
+    private getCredentials;
 }

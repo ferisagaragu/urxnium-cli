@@ -15,10 +15,8 @@ export class DocShared {
 	getMain(): any {
 		if (!this.file.exist(MAIN_PATH)) {
 			this.print.error(
-				'{Urxnium Doc}'.blue + ' is not initialized ' +
-				'run the command ' +
-				'[urxm doc init]'.yellow +
-				' and try again'
+				'{Urxnium Doc} is not initialized ' +
+				'run the command [urxm doc init] and try again'
 			);
 			return;
 		}
@@ -28,7 +26,7 @@ export class DocShared {
 
 	setMain(data: any): void {
 		this.file.writeFile(MAIN_PATH, JSON.stringify(data, null, 2));
-		this.print.information(`${MAIN_PATH} was ` + '{updated}'.blue);
+		this.print.information(`${MAIN_PATH} was [updated]`);
 	}
 
 	getProjectType(): string {

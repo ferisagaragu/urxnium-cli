@@ -28,7 +28,7 @@ export class InitDoc extends Command {
 
 	private getDocumentationType(onSelect: Function): void {
 		if (this.file.exist(MAIN_PATH)) {
-			this.print.information('{Urxnium Doc}'.blue + ' is already init');
+			this.print.information('{Urxnium Doc} is already init');
 			return;
 		}
 
@@ -109,7 +109,7 @@ export class InitDoc extends Command {
 			MAIN_PATH,
 			JSON.stringify(data, null, 2)
 		);
-		this.print.success(`${MAIN_PATH} was ` + '{created}'.blue);
+		this.print.success(`${MAIN_PATH} was [created]`);
 	}
 
 }

@@ -25,7 +25,7 @@ class InitDoc extends command_1.Command {
     }
     getDocumentationType(onSelect) {
         if (this.file.exist(doc_const_1.MAIN_PATH)) {
-            this.print.information('{Urxnium Doc}'.blue + ' is already init');
+            this.print.information('{Urxnium Doc} is already init');
             return;
         }
         this.inquirer.prompt([
@@ -91,7 +91,7 @@ class InitDoc extends command_1.Command {
     }
     setMain(data) {
         this.file.writeFile(doc_const_1.MAIN_PATH, JSON.stringify(data, null, 2));
-        this.print.success(`${doc_const_1.MAIN_PATH} was ` + '{created}'.blue);
+        this.print.success(`${doc_const_1.MAIN_PATH} was [created]`);
     }
 }
 exports.InitDoc = InitDoc;

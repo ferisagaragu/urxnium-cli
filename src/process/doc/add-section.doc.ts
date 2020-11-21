@@ -33,12 +33,12 @@ export class AddSectionDoc extends Command {
 		const outPath = `${BASE_DIR}/${name}/${name}.json`;
 
 		if (this.file.exist(outPath)) {
-			this.print.information(`{${outPath}}`.blue + ' already exist');
+			this.print.information(`{${outPath}} already exist`);
 			return;
 		}
 
 		this.file.writeFile(outPath, JSON.stringify(data, null, 2));
-		this.print.success(`${outPath} was ` + '{created}'.blue);
+		this.print.success(`${outPath} was [created]`);
 
 		this.updateMain(outPath, type);
 	}
@@ -62,7 +62,7 @@ export class AddSectionDoc extends Command {
 			MAIN_PATH,
 			JSON.stringify(main, null, 2)
 		);
-		this.print.information(`${MAIN_PATH} was ` + '{updated}'.blue);
+		this.print.information(`${MAIN_PATH} was [updated]`);
 	}
 
 	private getQuestions(): Array<any> {

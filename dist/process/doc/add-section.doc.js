@@ -24,11 +24,11 @@ class AddSectionDoc extends command_1.Command {
     setSection(data, name, type) {
         const outPath = `${doc_const_1.BASE_DIR}/${name}/${name}.json`;
         if (this.file.exist(outPath)) {
-            this.print.information(`{${outPath}}`.blue + ' already exist');
+            this.print.information(`{${outPath}} already exist`);
             return;
         }
         this.file.writeFile(outPath, JSON.stringify(data, null, 2));
-        this.print.success(`${outPath} was ` + '{created}'.blue);
+        this.print.success(`${outPath} was [created]`);
         this.updateMain(outPath, type);
     }
     updateMain(outPath, type) {
@@ -43,7 +43,7 @@ class AddSectionDoc extends command_1.Command {
             main.functional.src.push(outPath);
         }
         this.file.writeFile(doc_const_1.MAIN_PATH, JSON.stringify(main, null, 2));
-        this.print.information(`${doc_const_1.MAIN_PATH} was ` + '{updated}'.blue);
+        this.print.information(`${doc_const_1.MAIN_PATH} was [updated]`);
     }
     getQuestions() {
         const out = [];

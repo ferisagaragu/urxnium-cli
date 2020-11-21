@@ -74,18 +74,18 @@ class AddDocumentDoc extends command_1.Command {
         const path = `${doc_const_1.BASE_DIR}/${sectionName}/${documentName}` +
             `${type === 'rest' ? '.rest' : '.functional'}.json`;
         if (this.file.exist(path)) {
-            this.print.information(`{${path}}`.blue + ' already exist');
+            this.print.information(`{${path}} already exist`);
             return;
         }
         this.file.writeFile(path, JSON.stringify(data, null, 2));
-        this.print.success(`${path} was ` + '{created}'.blue);
+        this.print.success(`${path} was [created]`);
         this.updateSection(sectionPath, path);
     }
     updateSection(sectionPath, documentPath) {
         const section = JSON.parse(this.file.readFile(sectionPath));
         section.elements.push(documentPath);
         this.file.writeFile(sectionPath, JSON.stringify(section, null, 2));
-        this.print.information(`${sectionPath} was ` + '{updated}'.blue);
+        this.print.information(`${sectionPath} was [updated]`);
     }
     getSection(onSelectSection) {
         const sections = [];
@@ -96,10 +96,8 @@ class AddDocumentDoc extends command_1.Command {
         }
         this.getDocType((docType) => {
             if (main[docType].src.length === 0) {
-                this.print.error('{Urxnium Doc}'.blue + ' has no sections to document ' +
-                    'run the command ' +
-                    '[urxm doc add section]'.yellow +
-                    ' and try again');
+                this.print.error('{Urxnium Doc} has no sections to document ' +
+                    'run the command [urxm doc add section] and try again');
                 return;
             }
             main[docType].src.forEach((item) => {
@@ -108,8 +106,7 @@ class AddDocumentDoc extends command_1.Command {
                     sections.push(names[2].replace('.json', ''));
                 }
                 else {
-                    this.print.warning(`{${item}}`.blue +
-                        ' it is not registered as a valid section' +
+                    this.print.warning(`{${item}} it is not registered as a valid section` +
                         ' remove this section and try again');
                     showQuestions = false;
                 }

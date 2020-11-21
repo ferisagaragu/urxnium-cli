@@ -6,4 +6,9 @@ export declare class Print {
     warning(text: string): void;
     error(text: string): void;
     information(text: string): void;
+    convertCommand(text: string): string;
+    formatText(help: Array<any>): Array<any>;
+    private convertText;
+    private setColor;
+    private generateSpaces;
 }

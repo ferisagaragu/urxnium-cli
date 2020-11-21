@@ -14,7 +14,7 @@ export class TargzIo {
 		decompress(file, out).then((resp: any) => {
 			resp.forEach((item: any) => {
 				if (item.type === 'file') {
-					this.print.success(`${item.path} ` + '{decompressed}'.blue.bold);
+					this.print.success(`${item.path} [decompressed]`);
 				}
 			});
 			onDecompress && onDecompress();

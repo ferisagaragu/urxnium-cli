@@ -1,9 +1,9 @@
 {
-  "name": "urxnium2",
-  "version": "1.0.1",
+  "name": "urxnium-cli",
+  "version": "2.0.0",
   "description": "Console application for uranium commands",
   "bin": {
-    "urxm": "dist/index.js"
+    "urx": "dist/index.js"
   },
   "main": "index.js",
   "scripts": {

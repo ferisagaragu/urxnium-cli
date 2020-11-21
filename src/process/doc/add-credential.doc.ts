@@ -19,7 +19,7 @@ export class AddCredentialDoc extends Command {
 		if (!main.rest) {
 			this.print.error(
 				'credentials can only be created in ' +
-				'[REST projects]'.blue
+				'[REST projects]'
 			);
 			return;
 		}
@@ -57,13 +57,11 @@ export class AddCredentialDoc extends Command {
 				onFinish();
 
 				this.print.success(
-					`{${resp.name}}`.yellow +
-					` credential was` + `{created}`.blue
+					`{${resp.name}} credential was [created]`
 				);
 			} else {
 				this.print.information(
-					`{${resp.name}}`.yellow +
-					` credential already exist`
+					`{${resp.name}} credential already exist`
 				);
 			}
 		});

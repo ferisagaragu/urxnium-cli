@@ -1,14 +1,54 @@
 #!/usr/bin/env node
-import { System } from './core/system/system';
-import { Transcompiler } from './core/interpret/transcompiler';
-import path from 'path';
-import { Print } from './core/log/print';
+import { CommanderSystem } from './core/system/commander.system';
+
 import { InitDoc } from './process/doc/init.doc';
 import { AddSectionDoc } from './process/doc/add-section.doc';
 import { AddDocumentDoc } from './process/doc/add-document.doc';
 import { StartDoc } from './process/doc/start.doc';
 import { AddCredentialDoc } from './process/doc/add-credential.doc';
 
+const command = new CommanderSystem();
+
+command.execute('doc init').then(() => {
+  new InitDoc().init();
+});
+
+command.execute('doc start').then(() => {
+  new StartDoc().start();
+});
+
+command.execute('doc dist').then(() => {
+  new StartDoc().dist();
+});
+
+command.execute('doc add section', 'doc add s').then(() => {
+  new AddSectionDoc().addSection();
+});
+
+command.execute('doc add document', 'doc add d').then(() => {
+  new AddDocumentDoc().addDocument();
+});
+
+command.execute('doc add credential', 'doc add c').then(() => {
+  new AddCredentialDoc().addCredential();
+});
+
+command.execute('help').then(() => {
+  command.showHelp();
+});
+
+command.hasError();
+
+
+
+
+
+
+
+
+
+
+/*
 const system = new System();
 const print = new Print();
 
@@ -28,7 +68,7 @@ if (system.getParameters().length > 0) {
 
     case 'doc':
       switch (system.getParameters()[1]) {
-        case 'init':
+        case 'sad':
           new InitDoc().init();
         break;
 
@@ -94,9 +134,9 @@ if (system.getParameters().length > 0) {
         runJars(registry, pathName);
       });
     break;*/
-  }
+ // }
 
-}
+//}
 
 /*const runJars = (registry: any, pathName: string) => {
   (async () => {

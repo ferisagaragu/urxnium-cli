@@ -11,17 +11,15 @@ class DocShared {
     }
     getMain() {
         if (!this.file.exist(doc_const_1.MAIN_PATH)) {
-            this.print.error('{Urxnium Doc}'.blue + ' is not initialized ' +
-                'run the command ' +
-                '[urxm doc init]'.yellow +
-                ' and try again');
+            this.print.error('{Urxnium Doc} is not initialized ' +
+                'run the command [urxm doc init] and try again');
             return;
         }
         return JSON.parse(this.file.readFile(doc_const_1.MAIN_PATH));
     }
     setMain(data) {
         this.file.writeFile(doc_const_1.MAIN_PATH, JSON.stringify(data, null, 2));
-        this.print.information(`${doc_const_1.MAIN_PATH} was ` + '{updated}'.blue);
+        this.print.information(`${doc_const_1.MAIN_PATH} was [updated]`);
     }
     getProjectType() {
         const main = this.getMain();

@@ -104,12 +104,12 @@ export class AddDocumentDoc extends Command {
 			`${type === 'rest' ? '.rest' : '.functional'}.json`;
 
 		if(this.file.exist(path)) {
-			this.print.information(`{${path}}`.blue + ' already exist');
+			this.print.information(`{${path}} already exist`);
 			return;
 		}
 
 		this.file.writeFile(path, JSON.stringify(data, null, 2));
-		this.print.success(`${path} was ` + '{created}'.blue);
+		this.print.success(`${path} was [created]`);
 		this.updateSection(sectionPath, path);
 	}
 
@@ -117,7 +117,7 @@ export class AddDocumentDoc extends Command {
 		const section = JSON.parse(this.file.readFile(sectionPath));
 		section.elements.push(documentPath);
 		this.file.writeFile(sectionPath, JSON.stringify(section, null, 2));
-		this.print.information(`${sectionPath} was ` + '{updated}'.blue);
+		this.print.information(`${sectionPath} was [updated]`);
 	}
 
 	private getSection(onSelectSection: Function): void {
@@ -132,10 +132,8 @@ export class AddDocumentDoc extends Command {
 		this.getDocType((docType: string) => {
 			if (main[docType].src.length === 0) {
 				this.print.error(
-					'{Urxnium Doc}'.blue + ' has no sections to document ' +
-					'run the command ' +
-					'[urxm doc add section]'.yellow +
-					' and try again'
+					'{Urxnium Doc} has no sections to document ' +
+					'run the command [urxm doc add section] and try again'
 				);
 				return;
 			}
@@ -147,8 +145,7 @@ export class AddDocumentDoc extends Command {
 					sections.push(names[2].replace('.json', ''));
 				} else {
 					this.print.warning(
-						`{${item}}`.blue +
-						' it is not registered as a valid section' +
+						`{${item}} it is not registered as a valid section` +
 						' remove this section and try again'
 					);
 					showQuestions = false;

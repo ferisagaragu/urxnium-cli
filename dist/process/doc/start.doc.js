@@ -49,10 +49,10 @@ class StartDoc extends command_1.Command {
             return;
         }
         if (main.rest) {
-            main.rest.src = this.compileSrc(main, 'rest');
+            main.rest.src = this.compileSrc(main, 'rest', dist);
         }
         if (main.functional) {
-            main.functional.src = this.compileSrc(main, 'functional');
+            main.functional.src = this.compileSrc(main, 'functional', dist);
         }
         this.setUrxdoc(main, port, dist);
     }
@@ -69,9 +69,19 @@ class StartDoc extends command_1.Command {
             this.print.success(`application has been compiled see the dist folder`);
         }
     }
-    compileSrc(main, type) {
+    compileSrc(main, type, dist) {
         const src = main[type].src ? main[type].src : [];
         const srcOut = [];
+        if (dist && type === 'rest') {
+            main[type].credentials = null;
+            main[type].baseUrl = main[type].baseUrlProd;
+            delete main[type].baseUrlProd;
+        }
+        else if (type === 'rest') {
+            if (this.file.exist(main[type].credentials)) {
+                main[type].credentials = this.getCredentials();
+            }
+        }
         src.forEach((section) => {
             const sectionOut = this.getJsonFile(section);
             if (sectionOut) {
@@ -81,14 +91,12 @@ class StartDoc extends command_1.Command {
                     const documentationFileOut = this.getJsonFile(document);
                     if (documentationFileOut) {
                         documentationOut.push(documentationFileOut);
-                        this.print.success(`{${document}}`.yellow +
-                            ' was compiled success');
+                        this.print.success(`{${document}} was compiled success`);
                     }
                 });
                 sectionOut.elements = documentationOut;
                 srcOut.push(sectionOut);
-                this.print.success(`{${section}}`.yellow +
-                    ' was compiled success');
+                this.print.success(`{${section}} was compiled success`);
             }
         });
         return srcOut;
@@ -98,10 +106,12 @@ class StartDoc extends command_1.Command {
             return JSON.parse(this.file.readFile(path));
         }
         else {
-            this.print.warning(`{${path}} `.blue +
-                'does not exist remove the reference');
+            this.print.warning(`{${path}} does not exist remove the reference`);
             return;
         }
+    }
+    getCredentials() {
+        return JSON.parse(this.file.readFile(doc_const_1.CREDENTIALS_PATH));
     }
 }
 exports.StartDoc = StartDoc;

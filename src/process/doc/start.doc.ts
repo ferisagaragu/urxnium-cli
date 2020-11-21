@@ -1,5 +1,5 @@
 import { exec } from 'child_process';
-import { BASE_DIR, DIST_DIR, TEMP_FOLDER, VERSION } from './const/doc.const';
+import { BASE_DIR, CREDENTIALS_PATH, DIST_DIR, TEMP_FOLDER, VERSION } from './const/doc.const';
 import { Command } from '../../core/interface/command';
 import path from 'path';
 import { DocShared } from './shared/doc.shared';
@@ -63,11 +63,11 @@ export class StartDoc extends Command {
 		}
 
 		if (main.rest) {
-			main.rest.src = this.compileSrc(main, 'rest');
+			main.rest.src = this.compileSrc(main, 'rest', dist);
 		}
 
 		if (main.functional) {
-			main.functional.src = this.compileSrc(main, 'functional');
+			main.functional.src = this.compileSrc(main, 'functional', dist);
 		}
 
 		this.setUrxdoc(main, port, dist);
@@ -90,9 +90,19 @@ export class StartDoc extends Command {
 		}
 	}
 
-	private compileSrc(main: any, type: string): Array<any> {
+	private compileSrc(main: any, type: string, dist: boolean): Array<any> {
 		const src = main[type].src ? main[type].src : [];
 		const srcOut: Array<any> = [];
+
+		if (dist && type === 'rest') {
+			main[type].credentials = null;
+			main[type].baseUrl = main[type].baseUrlProd;
+			delete main[type].baseUrlProd;
+		} else if (type === 'rest') {
+			if (this.file.exist(main[type].credentials)) {
+				main[type].credentials = this.getCredentials();
+			}
+		}
 
 		src.forEach((section: string) => {
 			const sectionOut = this.getJsonFile(section);
@@ -107,8 +117,7 @@ export class StartDoc extends Command {
 					if (documentationFileOut) {
 						documentationOut.push(documentationFileOut);
 						this.print.success(
-							`{${document}}`.yellow +
-							' was compiled success'
+							`{${document}} was compiled success`
 						);
 					}
 				});
@@ -116,8 +125,7 @@ export class StartDoc extends Command {
 				sectionOut.elements = documentationOut;
 				srcOut.push(sectionOut);
 				this.print.success(
-					`{${section}}`.yellow +
-					' was compiled success'
+					`{${section}} was compiled success`
 				);
 			}
 		});
@@ -130,11 +138,14 @@ export class StartDoc extends Command {
 			return JSON.parse(this.file.readFile(path));
 		} else {
 			this.print.warning(
-				`{${path}} `.blue +
-				'does not exist remove the reference'
+				`{${path}} does not exist remove the reference`
 			);
 			return;
 		}
+	}
+
+	private getCredentials(): any {
+		return JSON.parse(this.file.readFile(CREDENTIALS_PATH));
 	}
 
 }
