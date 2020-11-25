@@ -1,0 +1,44 @@
+{
+  "name": "ExampleCode",
+  "access": "entity",
+  "bookmark": "",
+  "description": "Entity to create a code sample",
+  "html": null,
+  "exampleCodes": [
+    {
+      "title": "",
+      "description": "",
+      "code": "{\n  \"title\": \"\",\n  \"description\": \"\",\n  \"code\": \"\",\n  \"out\": \"\",\n  \"language\": \"\"\n}",
+      "out": null,
+      "language": "javascript"
+    }
+  ],
+  "attributes": [
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Code section title",
+      "default": "null"
+    },{
+      "name": "description",
+      "type": "string",
+      "description": "Code section description",
+      "default": "null"
+    },{
+      "name": "code",
+      "type": "any",
+      "description": "Example code",
+      "default": "null"
+    },{
+      "name": "out",
+      "type": "any",
+      "description": "Example out code",
+      "default": "null"
+    },{
+      "name": "language",
+      "type": "string",
+      "description": "Sample code language",
+      "default": "'javascript'"
+    }
+  ]
+}

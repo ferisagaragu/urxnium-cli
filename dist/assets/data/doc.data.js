@@ -63,8 +63,10 @@ exports.documentFunctional = {
     html: null,
     exampleCodes: [
         {
-            code: {},
-            out: {},
+            title: '',
+            description: '',
+            code: null,
+            out: null,
             language: 'javascript'
         }
     ],

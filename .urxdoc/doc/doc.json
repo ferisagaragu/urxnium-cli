@@ -1,0 +1,14 @@
+{
+  "name": "Doc",
+  "elements": [
+    ".urxdoc/doc/init.functional.json",
+    ".urxdoc/doc/start.functional.json",
+    ".urxdoc/doc/dist.functional.json",
+    ".urxdoc/doc/add.functional.json",
+    ".urxdoc/doc/add-section.functional.json",
+    ".urxdoc/doc/add-document.functional.json",
+    ".urxdoc/doc/example-code.functional.json",
+    ".urxdoc/doc/attribute.functional.json",
+    ".urxdoc/doc/path-variable.functional.json"
+  ]
+}

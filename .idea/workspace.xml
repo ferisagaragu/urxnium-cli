@@ -26,33 +26,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53ed8080-5e6a-43c2-a835-19ff1bef8090" name="Default Changelist" comment="se añadio una interfaz para comandos">
-      <change afterPath="$PROJECT_DIR$/src/assets/data/commands.data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/system/commander.system.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/feris.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/doc/add-section.functional.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/doc/attribute.functional.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/doc/path-variable.functional.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/doc/start.functional.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/urxnium-cli/help.functional.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/urxnium-cli/urxnium-cli.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/compress/urxnium-doc.tar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/assets/data/doc.data.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/assets/data/doc.data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/core/io/targz.io.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/core/io/targz.io.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/core/log/print.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/core/log/print.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/core/log/print.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/core/log/print.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/process/doc/add-document.doc.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/add-document.doc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/process/doc/add-section.doc.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/add-section.doc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/process/doc/init.doc.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/init.doc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/process/doc/shared/doc.shared.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/shared/doc.shared.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/process/doc/start.doc.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/start.doc.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/process/doc/start.doc.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/start.doc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/compress/urxnium-doc.tar" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/compress/urxnium-doc.tar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/data/doc.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/data/doc.data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/io/targz.io.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/io/targz.io.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/log/print.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/log/print.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/process/doc/add-credential.doc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/doc/add-credential.doc.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/process/doc/add-document.doc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/doc/add-document.doc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/process/doc/add-section.doc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/doc/add-section.doc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/process/doc/init.doc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/doc/init.doc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/process/doc/shared/doc.shared.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/doc/shared/doc.shared.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/process/doc/start.doc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/doc/start.doc.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +57,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/compress" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../dic/spanish.dic" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="LermitageExtraIcons" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
     <property name="ts.external.directory.path" value="C:\develop\pechblenda\urxnium\urxnium-cli\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -113,7 +102,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="1" Folder0="C:\dic" CustomDictionaries="1" CustomDictionary0="C:\dic\spanish.dic" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="53ed8080-5e6a-43c2-a835-19ff1bef8090" name="Default Changelist" comment="" />
@@ -128,6 +117,10 @@
       <workItem from="1605766607977" duration="140000" />
       <workItem from="1605841538542" duration="45000" />
       <workItem from="1605844967762" duration="3881000" />
+      <workItem from="1606165748480" duration="1495000" />
+      <workItem from="1606168258936" duration="10905000" />
+      <workItem from="1606233331309" duration="3936000" />
+      <workItem from="1606248984573" duration="6100000" />
     </task>
     <task id="LOCAL-00001" summary="se añadio una interfaz para comandos">
       <created>1605719006643</created>
@@ -174,6 +167,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="se añadio una interfaz para comandos" />
     <MESSAGE value="se añadio la distribucion" />
     <option name="LAST_COMMIT_MESSAGE" value="se añadio la distribucion" />
@@ -188,11 +182,11 @@
     </state>
     <state x="719" y="321" key="#com.intellij.fileTypes.FileTypeChooser/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605722360657" />
     <state x="719" y="321" key="#com.intellij.fileTypes.FileTypeChooser/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605626462596" />
-    <state x="818" y="414" key="FileChooserDialogImpl" timestamp="1605674094733">
+    <state x="818" y="414" key="FileChooserDialogImpl" timestamp="1606187837601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="818" y="414" key="FileChooserDialogImpl/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605674094733" />
-    <state x="818" y="414" key="FileChooserDialogImpl/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605477874898" />
+    <state x="818" y="414" key="FileChooserDialogImpl/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606187837601" />
     <state x="834" y="417" key="Github.ShareDialog" timestamp="1605674115591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -201,47 +195,56 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="758" y="215" key="Github.UntrackedFilesDialog/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605674124269" />
-    <state width="1899" height="158" key="GridCell.Tab.0.bottom" timestamp="1605849468202">
+    <state width="1899" height="157" key="GridCell.Tab.0.bottom" timestamp="1606187109400">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="158" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1605653779565" />
+    <state width="1345" height="96" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606166403846" />
     <state width="1899" height="158" key="GridCell.Tab.0.bottom/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605849468202" />
-    <state width="1899" height="158" key="GridCell.Tab.0.bottom/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605627525591" />
-    <state width="1899" height="158" key="GridCell.Tab.0.center" timestamp="1605849468202">
+    <state width="1345" height="96" key="GridCell.Tab.0.bottom/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@1920.315.1366.728" timestamp="1606167250932" />
+    <state width="1899" height="157" key="GridCell.Tab.0.bottom/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606187109400" />
+    <state width="1899" height="157" key="GridCell.Tab.0.center" timestamp="1606187109399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="158" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1605653779565" />
+    <state width="1345" height="96" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606166403846" />
     <state width="1899" height="158" key="GridCell.Tab.0.center/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605849468202" />
-    <state width="1899" height="158" key="GridCell.Tab.0.center/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605627525591" />
-    <state width="1899" height="158" key="GridCell.Tab.0.left" timestamp="1605849468201">
+    <state width="1345" height="96" key="GridCell.Tab.0.center/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@1920.315.1366.728" timestamp="1606167250932" />
+    <state width="1899" height="157" key="GridCell.Tab.0.center/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606187109399" />
+    <state width="1899" height="157" key="GridCell.Tab.0.left" timestamp="1606187109399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="158" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1605653779565" />
+    <state width="1345" height="96" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606166403846" />
     <state width="1899" height="158" key="GridCell.Tab.0.left/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605849468201" />
-    <state width="1899" height="158" key="GridCell.Tab.0.left/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605627525591" />
-    <state width="1899" height="158" key="GridCell.Tab.0.right" timestamp="1605849468202">
+    <state width="1345" height="96" key="GridCell.Tab.0.left/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@1920.315.1366.728" timestamp="1606167250932" />
+    <state width="1899" height="157" key="GridCell.Tab.0.left/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606187109399" />
+    <state width="1899" height="157" key="GridCell.Tab.0.right" timestamp="1606187109399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1345" height="158" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1605653779565" />
+    <state width="1345" height="96" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606166403846" />
     <state width="1899" height="158" key="GridCell.Tab.0.right/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605849468202" />
-    <state width="1899" height="158" key="GridCell.Tab.0.right/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605627525591" />
+    <state width="1345" height="96" key="GridCell.Tab.0.right/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@1920.315.1366.728" timestamp="1606167250932" />
+    <state width="1899" height="157" key="GridCell.Tab.0.right/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606187109399" />
     <state x="711" y="240" key="RollbackChangesDialog" timestamp="1605719115494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="711" y="240" key="RollbackChangesDialog/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605719115494" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1605462705662">
+    <state x="461" y="164" key="SettingsEditor" timestamp="1606187839600">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605462705662" />
+    <state x="461" y="164" key="SettingsEditor/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606187839600" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605719363290">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605719363290" />
-    <state x="-7" y="0" width="1378" height="735" key="dock-window-1" timestamp="1605649450312">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="-344" y="140" width="1937" height="1050" key="dock-window-1" timestamp="1606188438738">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-7" y="0" width="1378" height="735" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1605649450312" />
     <state x="3376" y="7" width="1600" height="842" key="dock-window-1/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605647723456" />
+    <state x="-344" y="140" width="1937" height="1050" key="dock-window-1/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606188438738" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2" timestamp="1606188438738">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-2/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606188438738" />
     <state x="505" y="0" width="826" height="1040" key="find.popup" timestamp="1605847244094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

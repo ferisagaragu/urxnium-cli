@@ -1,0 +1,6 @@
+{
+  "name": "Urxnium CLI",
+  "elements": [
+    ".urxdoc/urxnium-cli/help.functional.json"
+  ]
+}

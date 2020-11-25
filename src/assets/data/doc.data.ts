@@ -63,8 +63,10 @@ export const documentFunctional: any = {
   html: null,
   exampleCodes: [
     {
-      code: {},
-      out: {},
+      title: '',
+      description: '',
+      code: null,
+      out: null,
       language: 'javascript'
     }
   ],

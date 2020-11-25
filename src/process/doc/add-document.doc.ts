@@ -71,7 +71,16 @@ export class AddDocumentDoc extends Command {
 				name: 'access',
 				type: 'list',
 				message: 'what is the functionality access type ?',
-				choices: ['public', 'private', 'protected']
+				choices: [
+					'public',
+					'private',
+					'protected',
+					'entity',
+					'enum',
+					'interface',
+					'component',
+					'shell'
+				]
 			},{
 				name: 'description',
 				type: 'input',

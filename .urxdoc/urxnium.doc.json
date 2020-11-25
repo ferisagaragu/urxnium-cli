@@ -1,0 +1,13 @@
+{
+  "functional": {
+    "title": "Urxnium CLI",
+    "description": "Commands for Urxnium CLI",
+    "icon": "",
+    "version": "0.0.1",
+    "bookmarks": [],
+    "src": [
+      ".urxdoc/doc/doc.json",
+      ".urxdoc/urxnium-cli/urxnium-cli.json"
+    ]
+  }
+}

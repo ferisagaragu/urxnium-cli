@@ -1,0 +1,49 @@
+{
+  "name": "PathVariable",
+  "access": "entity",
+  "bookmark": "",
+  "description": "Entity to document the path variable of a REST service",
+  "html": null,
+  "exampleCodes": [
+    {
+      "title": "",
+      "description": "",
+      "code": "{\n  \"name\": \"\",\n  \"description\": \"\",\n  \"type\": \"\",\n  \"value\": \"\",\n  \"dateFormat\": \"\",\n  \"required\": true\n}",
+      "out": null,
+      "language": "javascript"
+    }
+  ],
+  "attributes": [
+    {
+      "name": "name",
+      "type": "string",
+      "description": "Path variable name",
+      "default": "''"
+    },{
+      "name": "description",
+      "type": "string",
+      "description": "Placeholder description text",
+      "default": "''"
+    },{
+      "name": "type",
+      "type": "text | number | date | check",
+      "description": "Type of the value of which the field will be",
+      "default": "any"
+    },{
+      "name": "value",
+      "type": "string",
+      "description": "Default value that the field will have",
+      "default": "''"
+    },{
+      "name": "dateFormat",
+      "type": "string",
+      "description": "If the field is of type date you can put a specific format",
+      "default": "''"
+    },{
+      "name": "required",
+      "type": "boolean",
+      "description": "Determine if the form will make the field required",
+      "default": "false"
+    }
+  ]
+}
