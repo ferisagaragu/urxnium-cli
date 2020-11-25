@@ -25,20 +25,35 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53ed8080-5e6a-43c2-a835-19ff1bef8090" name="Default Changelist" comment="se añadio una interfaz para comandos">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/feris.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.urxdoc/doc/add-section.functional.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.urxdoc/doc/attribute.functional.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.urxdoc/doc/path-variable.functional.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.urxdoc/doc/start.functional.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.urxdoc/urxnium-cli/help.functional.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.urxdoc/urxnium-cli/urxnium-cli.json" afterDir="false" />
+    <list default="true" id="53ed8080-5e6a-43c2-a835-19ff1bef8090" name="Default Changelist" comment="Se añadio toda la documentacion del Urxnium Doc">
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/3rdpartylicenses.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/4.a0369e287fcd429fe0a0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/5.61a9ef03876e7edde12d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/6.a7aeadb50326da25ae14.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/7.5311ecc12e2b13cf798a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/8.f2603a57ecc62599cb80.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/9.04f95c11e742b08bd7ce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/Inconsolata-Medium.07bf27c8ebda4ec5febb.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/assets/data/doc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/assets/fonts/Inconsolata-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/assets/fonts/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/assets/stylesheets/fonts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/assets/stylesheets/highlight.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/assets/stylesheets/theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/assets/svg/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/main.2553083c5a6898c2f369.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/materialdesignicons-webfont.506bc8215df8660d8f04.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/materialdesignicons-webfont.52adde0de9840940801f.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/materialdesignicons-webfont.6147fc3741c622c5de2c.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/materialdesignicons-webfont.d06df622bc47f0db9812.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/polyfills.35a5ca1855eb057f016a.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/runtime.80754f957102a45b8de4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.urxdoc/dist/styles.39f0a392bef04324b136.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/data/doc.data.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/assets/data/doc.data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/process/doc/add-document.doc.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/process/doc/add-document.doc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/compress/urxnium-doc.tar" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/compress/urxnium-doc.tar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/data/doc.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/data/doc.data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/process/doc/add-document.doc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/doc/add-document.doc.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.urxdoc/urxnium-cli/help.functional.json" beforeDir="false" afterPath="$PROJECT_DIR$/.urxdoc/urxnium-cli/help.functional.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +61,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kKmu2nj3BNLhFfjCljWrmiwJFR" />
@@ -120,7 +140,7 @@
       <workItem from="1606165748480" duration="1495000" />
       <workItem from="1606168258936" duration="10905000" />
       <workItem from="1606233331309" duration="3936000" />
-      <workItem from="1606248984573" duration="6100000" />
+      <workItem from="1606248984573" duration="7818000" />
     </task>
     <task id="LOCAL-00001" summary="se añadio una interfaz para comandos">
       <created>1605719006643</created>
@@ -136,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605719354724</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Se añadio toda la documentacion del Urxnium Doc">
+      <created>1606318419485</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606318419485</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +197,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="se añadio una interfaz para comandos" />
     <MESSAGE value="se añadio la distribucion" />
-    <option name="LAST_COMMIT_MESSAGE" value="se añadio la distribucion" />
+    <MESSAGE value="Se añadio toda la documentacion del Urxnium Doc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se añadio toda la documentacion del Urxnium Doc" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605626330046">
@@ -231,10 +259,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/1920.315.1366.728/3286.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606187839600" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605719363290">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606318432494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1605719363290" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.315.1366.728/0.0.1920.1040/3286.0.1920.1040@0.0.1920.1040" timestamp="1606318432494" />
     <state x="-344" y="140" width="1937" height="1050" key="dock-window-1" timestamp="1606188438738">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

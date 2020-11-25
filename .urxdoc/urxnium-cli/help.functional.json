@@ -2,23 +2,16 @@
   "name": "help",
   "access": "shell",
   "bookmark": "",
-  "description": "",
+  "description": "Command to display on screen a mapping of all the commands available by Urxnium CLI",
   "html": null,
   "exampleCodes": [
     {
-      "title": "",
+      "title": "Command",
       "description": "",
-      "code": null,
+      "code": "urx help",
       "out": null,
-      "language": "javascript"
+      "language": "shell"
     }
   ],
-  "attributes": [
-    {
-      "name": "",
-      "type": "",
-      "description": "",
-      "default": ""
-    }
-  ]
+  "attributes": []
 }
