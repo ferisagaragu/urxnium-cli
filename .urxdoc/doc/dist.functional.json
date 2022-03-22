@@ -1,0 +1,17 @@
+{
+  "name": "dist",
+  "access": "shell",
+  "bookmark": "",
+  "description": "Command to generate the Urxnium Doc distributable files. When this command is executed some functions such as authentication, they change to maintain the security of the REST api.",
+  "html": null,
+  "exampleCodes": [
+    {
+      "title": "Command",
+      "description": "When it finishes executing the command, it will result in a folder called [dist], which must be mounted on a server to be able to see the documentation in production mode.",
+      "code": "urx doc dist",
+      "out": ".urxdoc/\n  └── dist/",
+      "language": "shell"
+    }
+  ],
+  "attributes": []
+}

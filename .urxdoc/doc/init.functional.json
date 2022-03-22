@@ -1,0 +1,75 @@
+{
+  "name": "init",
+  "access": "shell",
+  "bookmark": "",
+  "description": "Command to initialize a documentation with Urxnium Doc",
+  "html": null,
+  "exampleCodes": [
+    {
+      "title": "Command",
+      "description": "This command creates the index file of the documentation. In order to create the documentation, it is necessary to answer if we want it to be of type REST, Functional or both.",
+      "code": "urx doc init",
+      "out": "? please select a documentation type\n   REST\n   Functional\n   Both",
+      "language": "shell"
+    },{
+      "title": "Structure resulting",
+      "description": "At the end of this command it will result in a file in the following structure",
+      "code": ".urxdoc/\n  └── urxnium.doc.json",
+      "out": null,
+      "language": "shell"
+    },{
+      "title": "Resulting file",
+      "description": "The file resulting from the selected option will vary as follows.",
+      "code": "{ \n  //Will appear if you selected REST or Both\n  \"rest\": {\n    \"title\": \"\",\n    \"description\": \"\",\n    \"icon\": \"\",\n    \"version\": \"\",\n    \"baseUrl\": \"\",\n    \"baseUrlProd\": \"\",\n    \"bookmarks\": [],\n    \"credentials\": \"\",\n    \"src\": []\n  },\n  //Will appear if you selected Functional or Both\n  \"functional\": {\n    \"title\": \"\",\n    \"description\": \"\",\n    \"icon\": \"\",\n    \"version\": \"\",\n    \"bookmarks\": [],\n    \"src\": []\n  }\n}",
+      "language": "json"
+    }
+  ],
+  "attributes": [
+    {
+      "name": "title",
+      "type": "string",
+      "description": "Title of the REST documentation",
+      "default": "''"
+    },{
+      "name": "description",
+      "type": "string",
+      "description": "Description of REST documentation",
+      "default": "''"
+    },{
+      "name": "icon",
+      "type": "string",
+      "description": "Icon in URL pointing to a .svg file",
+      "default": "''"
+    },{
+      "name": "version",
+      "type": "string",
+      "description": "REST documentation version",
+      "default": "''"
+    },{
+      "name": "bookmarks",
+      "type": "Array<Bookmark>",
+      "description": "Identifier for REST documentation [NOT ACTIVE]",
+      "default": "[]"
+    },{
+      "name": "src",
+      "type": "Array<string>",
+      "description": "This field should not be edited, the routes are generated through the CLI",
+      "default": "[]"
+    },{
+      "name": "baseUrl [REST]",
+      "type": "string",
+      "description": "URL of the domain where REST requests are made in development mode",
+      "default": "''"
+    },{
+      "name": "baseUrlProd [REST]",
+      "type": "string",
+      "description": "URL of the domain where REST requests are made in production mode",
+      "default": "''"
+    },{
+      "name": "credentials [REST]",
+      "type": "string",
+      "description": "This field should not be edited, the route is generated through the CLI",
+      "default": "''"
+    }
+  ]
+}

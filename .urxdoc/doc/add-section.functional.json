@@ -1,0 +1,41 @@
+{
+  "name": "add section | s",
+  "access": "shell",
+  "bookmark": "",
+  "description": "Command to generate a section of the documentation in Urxnium Doc.",
+  "html": null,
+  "exampleCodes": [
+    {
+      "title": "Command",
+      "description": "This command generates a new section file in the Urxnium Doc documentation. These sections will be displayed as a section title in the documentation.",
+      "code": "urx doc add section | s",
+      "out": "? what is the section name ? [type your section name]",
+      "language": "shell"
+    },{
+      "title": "Structure resulting",
+      "description": "At the end of this command, it results in a file within the following structure",
+      "code": "section-name/\n  └── section-name.json",
+      "out": null,
+      "language": "shell"
+    },{
+      "title": "Resulting file",
+      "description": "At the end of this command it will result in a file like the following",
+      "code": "{\n  \"name\": \"\",\n  \"elements\": []\n}",
+      "out": null,
+      "language": "json"
+    }
+  ],
+  "attributes": [
+    {
+      "name": "name",
+      "type": "string",
+      "description": "It is the name that the section will have",
+      "default": "''"
+    },{
+      "name": "elements",
+      "type": "Array<string>",
+      "description": "This field should not be edited, the route is generated through the CLI",
+      "default": "[]"
+    }
+  ]
+}

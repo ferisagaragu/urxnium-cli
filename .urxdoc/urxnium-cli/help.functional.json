@@ -1,0 +1,17 @@
+{
+  "name": "help",
+  "access": "shell",
+  "bookmark": "",
+  "description": "Comando para mostrar en pantalla un mapeo de todos los comandos disponibles por Urxnium CLI",
+  "html": null,
+  "exampleCodes": [
+    {
+      "title": "Command",
+      "description": "",
+      "code": "urx help",
+      "out": null,
+      "language": "shell"
+    }
+  ],
+  "attributes": []
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Attribute",
+  "access": "entity",
+  "bookmark": "",
+  "description": "Entity to create a new documentation attribute",
+  "html": null,
+  "exampleCodes": [
+    {
+      "title": "",
+      "description": "",
+      "code": "{\n  \"name\": \"\",\n  \"type\": \"\",\n  \"description\": \"\",\n  \"default\": \"\"\n}",
+      "out": null,
+      "language": "javascript"
+    }
+  ],
+  "attributes": [
+    {
+      "name": "name",
+      "type": "string",
+      "description": "Attribute name",
+      "default": "''"
+    },{
+      "name": "type",
+      "type": "string",
+      "description": "Attribute data type",
+      "default": "''"
+    },{
+      "name": "description",
+      "type": "string",
+      "description": "Attribute description",
+      "default": "''"
+    },{
+      "name": "default",
+      "type": "string",
+      "description": "Attribute default value",
+      "default": "''"
+    }
+  ]
+}

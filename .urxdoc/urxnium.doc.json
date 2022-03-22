@@ -1,0 +1,13 @@
+{
+  "functional": {
+    "title": "Urxnium CLI",
+    "description": "Command for free and free application development assistance",
+    "icon": "",
+    "version": "2.0.0",
+    "bookmarks": [],
+    "src": [
+      ".urxdoc/doc/doc.json",
+      ".urxdoc/urxnium-cli/urxnium-cli.json"
+    ]
+  }
+}

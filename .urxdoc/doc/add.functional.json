@@ -1,0 +1,34 @@
+{
+  "name": "add",
+  "access": "shell",
+  "bookmark": "",
+  "description": "Command to add [sections], [documents] and [credentials] to the documentation that will be generated.",
+  "html": null,
+  "exampleCodes": [
+    {
+      "title": "Command",
+      "description": "This command can be used with the following options",
+      "code": "urx doc add [section] [document] [credential]",
+      "out": null,
+      "language": "shell"
+    }
+  ],
+  "attributes": [
+    {
+      "name": "section | s",
+      "type": "command",
+      "description": "Command that automatically generates section files",
+      "default": "section"
+    },{
+      "name": "document | d",
+      "type": "command",
+      "description": "Command that automatically generates document files",
+      "default": "document"
+    },{
+      "name": "credential | d",
+      "type": "command",
+      "description": "Command that automatically generates credential files",
+      "default": "credential"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="53ed8080-5e6a-43c2-a835-19ff1bef8090" name="Default Changelist" comment="I add new type of documentation for urxnium-doc">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/data/spring-boot.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/data/spring-boot.data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/process/spring-boot/add-service.spring-boot.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/spring-boot/add-service.spring-boot.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/process/spring-boot/protect.spring-boot.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/spring-boot/protect.spring-boot.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/process/doc/add-document.doc.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/assets/data/spring-boot.data.ts" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1kKmu2nj3BNLhFfjCljWrmiwJFR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
+    <property name="ts.external.directory.path" value="C:\develop\pechblenda\urxnium\urxnium-cli\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\develop\pechblenda\urxnium\urxnium-cli\dist\assets\compress" />
+      <recent name="C:\develop\pechblenda\urxnium\urxnium-cli\src\assets\compress" />
+      <recent name="C:\develop\pechblenda\urxnium\urxnium-cli\src\process\spring-boot" />
+      <recent name="C:\develop\pechblenda\urxnium\urxnium-cli\dist\assets" />
+      <recent name="C:\develop\pechblenda\urxnium\urxnium-cli" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\develop\pechblenda\urxnium\urxnium-cli\src\core\system" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="1" Folder0="C:\dic" CustomDictionaries="1" CustomDictionary0="C:\dic\spanish.dic" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="53ed8080-5e6a-43c2-a835-19ff1bef8090" name="Default Changelist" comment="" />
+      <created>1605457891443</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605457891443</updated>
+      <workItem from="1605457893886" duration="35243000" />
+      <workItem from="1605625679055" duration="44744000" />
+      <workItem from="1605712196958" duration="5949000" />
+      <workItem from="1605719280489" duration="17087000" />
+      <workItem from="1605766607977" duration="140000" />
+      <workItem from="1605841538542" duration="45000" />
+      <workItem from="1605844967762" duration="3881000" />
+      <workItem from="1606165748480" duration="1495000" />
+      <workItem from="1606168258936" duration="10905000" />
+      <workItem from="1606233331309" duration="3936000" />
+      <workItem from="1606248984573" duration="6100000" />
+      <workItem from="1607100287639" duration="620000" />
+      <workItem from="1607367142122" duration="17000" />
+      <workItem from="1627407557619" duration="19427000" />
+      <workItem from="1627580528499" duration="744000" />
+      <workItem from="1627584867207" duration="11055000" />
+      <workItem from="1628013085812" duration="466000" />
+      <workItem from="1628534543816" duration="6791000" />
+      <workItem from="1628614758531" duration="4574000" />
+      <workItem from="1628795843467" duration="3028000" />
+      <workItem from="1628874513296" duration="691000" />
+      <workItem from="1636665804034" duration="44000" />
+      <workItem from="1639582799307" duration="4699000" />
+      <workItem from="1641155013537" duration="5883000" />
+      <workItem from="1641275763915" duration="3739000" />
+      <workItem from="1641843347872" duration="3060000" />
+      <workItem from="1647046597115" duration="3559000" />
+    </task>
+    <task id="LOCAL-00001" summary="se añadio una interfaz para comandos">
+      <created>1605719006643</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605719006643</updated>
+    </task>
+    <task id="LOCAL-00002" summary="se añadio la distribucion">
+      <created>1605719354724</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605719354724</updated>
+    </task>
+    <task id="LOCAL-00003" summary="I add a new commands to generate services and security in spring boot whit kotlin">
+      <created>1628633382701</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1628633382701</updated>
+    </task>
+    <task id="LOCAL-00004" summary="I add new type of documentation for urxnium-doc">
+      <created>1628833569432</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1628833569432</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="se añadio una interfaz para comandos" />
+    <MESSAGE value="se añadio la distribucion" />
+    <MESSAGE value="I add a new commands to generate services and security in spring boot whit kotlin" />
+    <MESSAGE value="I add new type of documentation for urxnium-doc" />
+    <option name="LAST_COMMIT_MESSAGE" value="I add new type of documentation for urxnium-doc" />
+  </component>
+</project>
