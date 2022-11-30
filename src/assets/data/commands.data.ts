@@ -10,5 +10,5 @@ export const commandDescription: any = {
 		'generates temporary credentials to authorize web services, ' +
 		'these will not be included in the distribution of the documentation',
 	'sbku generate service': 'generate necessary files to create a ' + 'REST'.red +
-		' service in ' + 'Spring Boot'.green + ' + ' + 'Kotlin'.blue + ' + ' + 'Urxnium'.magenta
+		' service in ' + 'Spring Boot'.green + ' + ' + 'Kotlin'.blue + ' + ' + 'Urxnium'.magenta,
 }

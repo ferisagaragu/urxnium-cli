@@ -2,6 +2,8 @@ import { File } from '../io/file';
 import { Print } from '../log/print';
 import { TargzIo } from '../io/targz.io';
 import { Text } from '../util/text';
+import { System } from '../system/system';
+import { Console } from '../system/console';
 
 const inquirer = require('inquirer');
 interface Inquirer {
@@ -17,6 +19,8 @@ export class Command {
 	tarzgIo: TargzIo;
 	inquirer: Inquirer;
 	text: Text;
+	system: System;
+	console: Console;
 
 	constructor() {
 		this.file = new File();
@@ -24,6 +28,8 @@ export class Command {
 		this.tarzgIo = new TargzIo();
 		this.inquirer = inquirer;
 		this.text = new Text();
+		this.system = new System();
+		this.console = new Console();
 	}
 
 	openBrowser(host: string): void {

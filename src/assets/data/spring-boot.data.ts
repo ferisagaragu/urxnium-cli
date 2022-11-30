@@ -432,6 +432,7 @@ export const webSecurityConfigSpringBoot = (packagePath: string) => {
 
 import org.pechblenda.auth.AuthController
 import org.pechblenda.auth.service.AuthService
+import org.pechblenda.auth.util.ContextApp
 import ${packagePath}.entity.User
 import org.pechblenda.security.JwtAuthEntryPoint
 import org.pechblenda.security.JwtAuthTokenFilter
@@ -439,66 +440,34 @@ import org.pechblenda.security.JwtProvider
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Bean
-import org.springframework.context.annotation.Configuration
 import org.springframework.security.authentication.AuthenticationManager
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter
 import org.springframework.security.config.http.SessionCreationPolicy
-import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 import org.springframework.security.crypto.password.PasswordEncoder
+import org.springframework.security.web.SecurityFilterChain
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter
 
-@Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-class WebSecurityConfig: WebSecurityConfigurerAdapter() {
+class WebSecurityConfig {
 
 \t@Autowired
 \tprivate lateinit var userDetailsService: UserDetailsServiceImpl
 
 \t@Autowired
-\tprivate lateinit var jwtAuthEntryPoint: JwtAuthEntryPoint
-
-\t@Autowired
 \tprivate lateinit var jwtProvider: JwtProvider
 
+\t@Autowired
+\tprivate lateinit var authRepository: IAuthRepository
 
-\t@Throws(Exception::class)
-\toverride fun configure(authenticationManagerBuilder: AuthenticationManagerBuilder) {
-\t\tauthenticationManagerBuilder
-\t\t\t.userDetailsService<UserDetailsService?>(userDetailsService)
-\t\t\t.passwordEncoder(passwordEncoder())
-\t}
-
-\t@Throws(Exception::class)
-\toverride fun configure(http: HttpSecurity) {
-\t\thttp
-\t\t\t.cors()
-\t\t\t.and()
-\t\t\t.csrf()
-\t\t\t.disable()
-\t\t\t.authorizeRequests()
-\t\t\t.antMatchers(
-\t\t\t\t"/api/**/",
-\t\t\t\t"/rest/auth/**"
-\t\t\t).permitAll()
-\t\t\t.anyRequest()
-\t\t\t.authenticated()
-\t\t\t.and()
-\t\t\t.exceptionHandling()
-\t\t\t.authenticationEntryPoint(jwtAuthEntryPoint)
-\t\t\t.and()
-\t\t\t.sessionManagement()
-\t\t\t.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-
-\t\thttp.addFilterBefore(
-\t\t\tauthenticationJwtTokenFilter(),
-\t\t\tUsernamePasswordAuthenticationFilter::class.java
-\t\t)
+\t@Bean
+\tfun authenticationJwtTokenFilter(): JwtAuthTokenFilter {
+\t\treturn JwtAuthTokenFilter(jwtProvider, userDetailsService)
 \t}
 
 \t@Bean
@@ -507,19 +476,46 @@ class WebSecurityConfig: WebSecurityConfigurerAdapter() {
 \t}
 
 \t@Bean
+\tfun authenticationProvider(): DaoAuthenticationProvider {
+\t\tval authProvider = DaoAuthenticationProvider()
+\t\tauthProvider.setUserDetailsService(userDetailsService)
+\t\tauthProvider.setPasswordEncoder(passwordEncoder())
+\t\treturn authProvider
+\t}
+
+\t@Bean
+\tfun authenticationManager(authConfig: AuthenticationConfiguration): AuthenticationManager {
+\t\treturn authConfig.authenticationManager
+\t}
+
+\t@Bean
 \tfun passwordEncoder(): PasswordEncoder {
 \t\treturn BCryptPasswordEncoder()
 \t}
 
 \t@Bean
-\tfun authenticationJwtTokenFilter(): JwtAuthTokenFilter {
-\t\treturn JwtAuthTokenFilter(jwtProvider, userDetailsService)
-\t}
+\tfun filterChain(http: HttpSecurity): SecurityFilterChain? {
+\t\thttp.cors()
+\t\t\t.and()
+\t\t\t.csrf()
+\t\t\t.disable()
+\t\t\t.exceptionHandling()
+\t\t\t.authenticationEntryPoint(jwtAuthEntryPoint())
+\t\t\t.and()
+\t\t\t.sessionManagement()
+\t\t\t.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+\t\t\t.and()
+\t\t\t.authorizeRequests()
+\t\t\t.antMatchers(
+\t\t\t\t"/rest/auth/**",
+\t\t\t\t"/api/**",
+\t\t\t).permitAll()
+\t\t\t.anyRequest()
+\t\t\t.authenticated()
 
-\t@Bean
-\t@Throws(Exception::class)
-\toverride fun authenticationManagerBean(): AuthenticationManager {
-\t\treturn super.authenticationManagerBean()
+\t\thttp.authenticationProvider(authenticationProvider())
+\t\thttp.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter::class.java)
+\t\treturn http.build()
 \t}
 
 \t@Bean
@@ -530,6 +526,11 @@ class WebSecurityConfig: WebSecurityConfigurerAdapter() {
 \t@Bean
 \tfun authController(): AuthController {
 \t\treturn AuthController()
+\t}
+
+\t@Bean
+\tfun contextApp(): ContextApp {
+\t\treturn ContextApp(authRepository)
 \t}
 
 }

@@ -9,7 +9,7 @@ IF EXIST "%dp0%\node.exe" (
   SET PATHEXT=%PATHEXT:;.JS;=;%
 )
 
-"%_prog%"  "C:/develop/pechblenda/urxnium/urxnium-cli/dist/index.js" %*
+node "C:/develop/pechblenda/urxnium/urxnium-cli/dist/index.js" %*
 ENDLOCAL
 EXIT /b %errorlevel%
 :find_dp0

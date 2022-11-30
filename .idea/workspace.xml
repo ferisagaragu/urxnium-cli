@@ -25,12 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53ed8080-5e6a-43c2-a835-19ff1bef8090" name="Default Changelist" comment="I add new type of documentation for urxnium-doc">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/data/spring-boot.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/data/spring-boot.data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/process/spring-boot/add-service.spring-boot.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/spring-boot/add-service.spring-boot.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/process/spring-boot/protect.spring-boot.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/spring-boot/protect.spring-boot.ts" afterDir="false" />
-    </list>
+    <list default="true" id="53ed8080-5e6a-43c2-a835-19ff1bef8090" name="Default Changelist" comment="I backup this project because is old but I retome the work" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,8 +35,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/process/doc/add-document.doc.ts" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/assets/data/spring-boot.data.ts" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/process/doc/add-document.doc.ts" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1kKmu2nj3BNLhFfjCljWrmiwJFR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -51,26 +49,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
-    <property name="ts.external.directory.path" value="C:\develop\pechblenda\urxnium\urxnium-cli\node_modules\typescript\lib" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/develop/pechblenda/urxnium/urxnium-cli&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\develop\\pechblenda\\urxnium\\urxnium-cli\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\develop\pechblenda\urxnium\urxnium-cli" />
       <recent name="C:\develop\pechblenda\urxnium\urxnium-cli\dist\assets\compress" />
       <recent name="C:\develop\pechblenda\urxnium\urxnium-cli\src\assets\compress" />
       <recent name="C:\develop\pechblenda\urxnium\urxnium-cli\src\process\spring-boot" />
       <recent name="C:\develop\pechblenda\urxnium\urxnium-cli\dist\assets" />
-      <recent name="C:\develop\pechblenda\urxnium\urxnium-cli" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\develop\pechblenda\urxnium\urxnium-cli\src\core\system" />
@@ -138,6 +135,20 @@
       <workItem from="1641275763915" duration="3739000" />
       <workItem from="1641843347872" duration="3060000" />
       <workItem from="1647046597115" duration="3559000" />
+      <workItem from="1647975110740" duration="1238000" />
+      <workItem from="1648937744012" duration="5940000" />
+      <workItem from="1648958244912" duration="92000" />
+      <workItem from="1649016650141" duration="1146000" />
+      <workItem from="1649027736082" duration="4258000" />
+      <workItem from="1649032175581" duration="71000" />
+      <workItem from="1649032694514" duration="269000" />
+      <workItem from="1649033012608" duration="23000" />
+      <workItem from="1658541574337" duration="1465000" />
+      <workItem from="1667177583498" duration="837000" />
+      <workItem from="1669733661028" duration="20880000" />
+      <workItem from="1669822501186" duration="2067000" />
+      <workItem from="1669824626865" duration="42000" />
+      <workItem from="1669824674282" duration="104000" />
     </task>
     <task id="LOCAL-00001" summary="se añadio una interfaz para comandos">
       <created>1605719006643</created>
@@ -195,14 +206,17 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="se añadio una interfaz para comandos" />
     <MESSAGE value="se añadio la distribucion" />
     <MESSAGE value="I add a new commands to generate services and security in spring boot whit kotlin" />
     <MESSAGE value="I add new type of documentation for urxnium-doc" />
-    <option name="LAST_COMMIT_MESSAGE" value="I add new type of documentation for urxnium-doc" />
+    <MESSAGE value="I backup this project because is old but I retome the work" />
+    <option name="LAST_COMMIT_MESSAGE" value="I backup this project because is old but I retome the work" />
   </component>
 </project>

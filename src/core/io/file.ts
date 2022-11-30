@@ -10,6 +10,10 @@ export class File {
     return readFileSync(path).toString();
   }
 
+  copyFile(origin: string, destiny: string): void {
+    return fs.copyFileSync(origin, destiny);
+  }
+
   readFiles(dir: string): Array<string> {
     return this.readFilesRecursive(dir, []);
   }
@@ -25,6 +29,10 @@ export class File {
     } catch (e) {
       console.error(e.toString())
     }
+  }
+
+  writeFolder(file: string): void {
+    mkdirp.sync(path.dirname(file));
   }
 
   clearFolder(dir: string) {

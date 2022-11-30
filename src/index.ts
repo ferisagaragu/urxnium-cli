@@ -1,18 +1,60 @@
 #!/usr/bin/env node
 import { CommanderSystem } from './core/system/commander.system';
+import { AddServiceSpringBoot } from './process/spring-boot/add-service.spring-boot';
+import { ProtectSpringBoot } from './process/spring-boot/protect.spring-boot';
+import { AddDocumentationSpringBoot } from './process/spring-boot/add-documentation.spring-boot';
+import { AuthMock } from './process/mock/auth.mock';
+import { AndroidIonicBuild } from './process/build/android-ionic.build';
+import { ExecEnvironment } from './process/environment/exec.environment';
 
+const command = new CommanderSystem();
+
+//commands for spring boot kotlin with uranium-kotlin
+command.execute('sbk add service', 'sbku add s').then(() => {
+  new AddServiceSpringBoot().generateService();
+});
+
+command.execute('sbk add documentation', 'sbku add d').then(() => {
+  new AddDocumentationSpringBoot().printDocumentation();
+});
+
+command.execute('sbk protect', 'sbku p').then(() => {
+  new ProtectSpringBoot().protectProject();
+});
+//=================================================================================
+
+//util functions
+command.execute('mock auth', 'mock a').then(() => {
+  new AuthMock().initAuthServer();
+});
+
+command.execute('ica build', 'ica b').then(() => {
+  new AndroidIonicBuild().buildAndroidApk();
+});
+
+command.execute('environment exec', 'e e').then(() => {
+  new ExecEnvironment().initExecEnvironmentServer();
+});
+//=================================================================================
+
+command.execute('help', 'h').then(() => {
+  command.showHelp();
+});
+
+command.hasError();
+
+/*
 import { InitDoc } from './process/doc/init.doc';
 import { AddSectionDoc } from './process/doc/add-section.doc';
 import { AddDocumentDoc } from './process/doc/add-document.doc';
 import { StartDoc } from './process/doc/start.doc';
 import { AddCredentialDoc } from './process/doc/add-credential.doc';
+ */
 
-import { AddServiceSpringBoot } from './process/spring-boot/add-service.spring-boot';
-import { ProtectSpringBoot } from './process/spring-boot/protect.spring-boot';
-import { AddDocumentationSpringBoot } from './process/spring-boot/add-documentation.spring-boot';
+//java -jar sonar_quality.jar \"http://localhost:9000\" \"festus-invitation\" \"f9a0ee4fc10a30770c82314092c4b03d3e871ba2\" \"src/assets/quantity\" \"src/app/core/data\"
 
-const command = new CommanderSystem();
 
+/*
 command.execute('doc init').then(() => {
   new InitDoc().init();
 });
@@ -40,32 +82,7 @@ command.execute('doc add document', 'doc add d').then(() => {
 command.execute('doc add credential', 'doc add c').then(() => {
   new AddCredentialDoc().addCredential();
 });
-
-command.execute('sbku add service', 'sbku add s').then(() => {
-  new AddServiceSpringBoot().generateService();
-});
-
-command.execute('sbku add documentation', 'sbku add d').then(() => {
-  new AddDocumentationSpringBoot().printDocumentation();
-});
-
-command.execute('sbku protect', 'sbku p').then(() => {
-  new ProtectSpringBoot().protectProject();
-});
-
-command.execute('help').then(() => {
-  command.showHelp();
-});
-
-command.hasError();
-
-
-
-
-
-
-
-
+*/
 
 
 /*
