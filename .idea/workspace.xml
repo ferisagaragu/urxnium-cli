@@ -57,7 +57,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/develop/pechblenda/urxnium/urxnium-cli&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\develop\\pechblenda\\urxnium\\urxnium-cli\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\TeamCity\\scrips\\urxnium-cli\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -149,6 +149,8 @@
       <workItem from="1669822501186" duration="2067000" />
       <workItem from="1669824626865" duration="42000" />
       <workItem from="1669824674282" duration="104000" />
+      <workItem from="1669824889876" duration="206000" />
+      <workItem from="1669825217922" duration="247000" />
     </task>
     <task id="LOCAL-00001" summary="se añadio una interfaz para comandos">
       <created>1605719006643</created>
