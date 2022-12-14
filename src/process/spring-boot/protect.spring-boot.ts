@@ -2,6 +2,7 @@ import { Command } from '../../core/interface/command';
 import { BASE_DIR, BASE_DIR_RESOURCES } from './const/spring-boot.const';
 import { SpringBootShared } from './shared/spring-boot.shared';
 import {
+	beanConfigSpringBoot,
 	dependencyTip,
 	iAuthRepositorySpringBoot,
 	springBootConfigProperties, springBootConfigPropertiesDev,
@@ -36,6 +37,7 @@ export class ProtectSpringBoot extends Command {
 				const webSecurityConfig = `${this.getAbsolutePath()}/security/WebSecurityConfig.kt`;
 				const userDetailsServiceImpl = `${this.getAbsolutePath()}/security/UserDetailsServiceImpl.kt`;
 				const userPrinciple = `${this.getAbsolutePath()}/security/UserPrinciple.kt`;
+				const bean = `${this.getAbsolutePath()}/config/BeanConfig.kt`;
 
 				if (!this.file.readFile(propertiesPath).includes('app.auth.jwt-secret')) {
 					this.file.writeFile(
@@ -123,6 +125,17 @@ export class ProtectSpringBoot extends Command {
 					this.print.success(`{UserPrinciple} was create successfully`);
 				} else {
 					this.print.warning(`{UserPrinciple} is already exist`);
+				}
+
+				if (!this.file.exist(bean)) {
+					this.file.writeFile(
+						bean,
+						beanConfigSpringBoot(this.springBootShared.getRootFolder())
+					);
+
+					this.print.success(`{Bean} was create successfully`);
+				} else {
+					this.print.warning(`{Bean} is already exist`);
 				}
 
 				this.print.information(dependencyTip());

@@ -60,7 +60,7 @@ export class ExecEnvironment extends Command {
         console.log('\n\n' +
           '{\n'.green +
           '  "helper-boy-mobile": '.cyan + '{\n'.green +
-          '    "path": '.cyan + '"C:\\\\TeamCity\\\\buildAgent\\\\work\\\\d7d46d30bee5a868\\\\android",\n' +
+          '    "path": '.cyan + '"C:\\TeamCity\\buildAgent\\work\\d7d46d30bee5a868\\android",\n' +
           '    "steps": '.cyan + '[\n'.green +
           '      "gradlew assembleDebug"\n' +
           '    ]\n'.green +

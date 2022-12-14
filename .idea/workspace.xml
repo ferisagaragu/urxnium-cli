@@ -25,7 +25,18 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53ed8080-5e6a-43c2-a835-19ff1bef8090" name="Default Changelist" comment="I backup this project because is old but I retome the work" />
+    <list default="true" id="53ed8080-5e6a-43c2-a835-19ff1bef8090" name="Default Changelist" comment="I upload ignored files">
+      <change afterPath="$PROJECT_DIR$/src/process/mock/microservice.mock.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/process/spring-boot/protect-microservice.spring-boot.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scannerwork/.sonartmp/scanner-report3125766689595735295.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.scannerwork/report-task.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.scannerwork/report-task.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/data/spring-boot.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/data/spring-boot.data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/process/build/android-ionic.build.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/build/android-ionic.build.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/process/environment/exec.environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/environment/exec.environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/process/spring-boot/protect.spring-boot.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/process/spring-boot/protect.spring-boot.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,10 +65,10 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/develop/pechblenda/urxnium/urxnium-cli&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/develop/pechblenda/my-house/mrs-administrator-mobile&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\TeamCity\\scrips\\urxnium-cli\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\develop\\pechblenda\\urxnium\\urxnium-cli\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -151,6 +162,12 @@
       <workItem from="1669824674282" duration="104000" />
       <workItem from="1669824889876" duration="206000" />
       <workItem from="1669825217922" duration="247000" />
+      <workItem from="1669825524465" duration="403000" />
+      <workItem from="1669825942880" duration="9011000" />
+      <workItem from="1670609664596" duration="5028000" />
+      <workItem from="1670784534467" duration="1438000" />
+      <workItem from="1670824791220" duration="3407000" />
+      <workItem from="1670976812024" duration="3251000" />
     </task>
     <task id="LOCAL-00001" summary="se añadio una interfaz para comandos">
       <created>1605719006643</created>
@@ -180,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628833569432</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="I upload ignored files">
+      <created>1669829429898</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669829429898</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,14 +235,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <ignored-roots>
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
     <MESSAGE value="se añadio una interfaz para comandos" />
     <MESSAGE value="se añadio la distribucion" />
     <MESSAGE value="I add a new commands to generate services and security in spring boot whit kotlin" />
     <MESSAGE value="I add new type of documentation for urxnium-doc" />
     <MESSAGE value="I backup this project because is old but I retome the work" />
-    <option name="LAST_COMMIT_MESSAGE" value="I backup this project because is old but I retome the work" />
+    <MESSAGE value="I upload ignored files" />
+    <option name="LAST_COMMIT_MESSAGE" value="I upload ignored files" />
   </component>
 </project>

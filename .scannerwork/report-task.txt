@@ -1,6 +1,6 @@
 projectKey=urxnium-cli
 serverUrl=http://localhost:9000
-serverVersion=9.3.0.51899
+serverVersion=9.7.1.62043
 dashboardUrl=http://localhost:9000/dashboard?id=urxnium-cli
-ceTaskId=AX-zBAWAH5efiC0OYkmo
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AX-zBAWAH5efiC0OYkmo
+ceTaskId=AYTOiEZFI3Dq7WW1NoQC
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYTOiEZFI3Dq7WW1NoQC

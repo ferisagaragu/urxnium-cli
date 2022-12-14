@@ -6,30 +6,43 @@ import { AddDocumentationSpringBoot } from './process/spring-boot/add-documentat
 import { AuthMock } from './process/mock/auth.mock';
 import { AndroidIonicBuild } from './process/build/android-ionic.build';
 import { ExecEnvironment } from './process/environment/exec.environment';
+import { ProtectMicroserviceSpringBoot } from './process/spring-boot/protect-microservice.spring-boot';
+import { MicroserviceMock } from './process/mock/microservice.mock';
 
 const command = new CommanderSystem();
 
 //commands for spring boot kotlin with uranium-kotlin
-command.execute('sbk add service', 'sbku add s').then(() => {
+command.execute('sbk add service', 'sbk add s').then(() => {
   new AddServiceSpringBoot().generateService();
 });
 
-command.execute('sbk add documentation', 'sbku add d').then(() => {
+command.execute('sbk add documentation', 'sbk add d').then(() => {
   new AddDocumentationSpringBoot().printDocumentation();
 });
 
-command.execute('sbk protect', 'sbku p').then(() => {
+command.execute('sbk protect', 'sbk p').then(() => {
   new ProtectSpringBoot().protectProject();
 });
+
+command.execute('sbk protect --microservice', 'sbk p --m').then(() => {
+  new ProtectMicroserviceSpringBoot().protectProject();
+});
 //=================================================================================
+
+//commands for ionic capacitor android
+command.execute('ica build', 'ica b').then(() => {
+  new AndroidIonicBuild().buildAndroidApk();
+});
+//=================================================================================
+
 
 //util functions
 command.execute('mock auth', 'mock a').then(() => {
   new AuthMock().initAuthServer();
 });
 
-command.execute('ica build', 'ica b').then(() => {
-  new AndroidIonicBuild().buildAndroidApk();
+command.execute('mock microservices', 'mock m').then(() => {
+  new MicroserviceMock().initMicroserviceServer();
 });
 
 command.execute('environment exec', 'e e').then(() => {

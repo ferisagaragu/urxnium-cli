@@ -638,6 +638,34 @@ class UserPrinciple(
 `;
 }
 
+export const beanConfigSpringBoot = (packagePath: string) => {
+	return `package ${packagePath}.config
+
+import org.pechblenda.auth.AuthController
+import org.pechblenda.doc.Documentation
+import ${packagePath}.entity.User
+
+import org.springframework.context.annotation.Bean
+import org.springframework.context.annotation.ComponentScan
+import org.springframework.context.annotation.Configuration
+
+@Configuration
+@ComponentScan("org.pechblenda.bean")
+class BeanConfig {
+
+\t@Bean
+\tfun documentation(): Documentation {
+\t\treturn Documentation(
+\t\t\tmutableListOf(
+\t\t\t\tUser::class
+\t\t\t),
+\t\t\tAuthController::class
+\t\t)
+\t}
+
+}`;
+}
+
 export const dependencyTip = () => {
   return `Please put this dependency in your pom or gradle
 
@@ -748,4 +776,125 @@ export const documentDocJson = (): string => {
 \t],
 \t"requestBody": { }
 }`;
+}
+
+export const beanConfigSpringBootMicroservice = (packagePath: string) => {
+	return `package ${packagePath}.config
+
+import org.pechblenda.doc.Documentation
+
+import org.springframework.context.annotation.Bean
+import org.springframework.context.annotation.ComponentScan
+import org.springframework.context.annotation.Configuration
+
+@Configuration
+@ComponentScan("org.pechblenda.bean")
+class BeanConfig {
+
+\t@Bean
+\tfun documentation(): Documentation {
+\t\treturn Documentation(
+\t\t\tmutableListOf()
+\t\t)
+\t}
+
+}
+`;
+}
+
+export const webSecurityConfigSpringBootMicroservice = (packagePath: string) => {
+	return `package ${packagePath}.security
+
+import org.pechblenda.security.JwtAuthEntryPoint
+import org.pechblenda.security.JwtAuthTokenFilterMicroservice
+import org.pechblenda.security.JwtProvider
+
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.context.annotation.Bean
+import org.springframework.security.authentication.AuthenticationManager
+import org.springframework.security.authentication.AuthenticationServiceException
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity
+import org.springframework.security.config.annotation.web.builders.HttpSecurity
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
+import org.springframework.security.config.http.SessionCreationPolicy
+import org.springframework.security.web.SecurityFilterChain
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter
+
+@EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled = true)
+class WebSecurityConfig {
+
+	@Autowired
+	private lateinit var jwtProvider: JwtProvider
+
+	@Autowired
+	private lateinit var authProxy: IAuthProxy
+
+	@Bean
+	fun jwtAuthTokenFilterMicroservice(): JwtAuthTokenFilterMicroservice {
+		return JwtAuthTokenFilterMicroservice(jwtProvider, authProxy)
+	}
+
+	@Bean
+	fun jwtAuthEntryPoint(): JwtAuthEntryPoint {
+		return JwtAuthEntryPoint()
+	}
+	
+	@Bean
+	fun noopAuthenticationManager(): AuthenticationManager? {
+		return AuthenticationManager {
+			throw AuthenticationServiceException(
+				"Authentication is disabled"
+			)
+		}
+	}
+
+	@Bean
+	fun filterChain(http: HttpSecurity): SecurityFilterChain? {
+		http.cors()
+			.and()
+			.csrf()
+			.disable()
+			.exceptionHandling()
+			.authenticationEntryPoint(jwtAuthEntryPoint())
+			.and()
+			.sessionManagement()
+			.sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+			.and()
+			.authorizeRequests()
+			.antMatchers(
+				"/api/**",
+			).permitAll()
+			.anyRequest()
+			.authenticated()
+
+		http.addFilterBefore(jwtAuthTokenFilterMicroservice(), UsernamePasswordAuthenticationFilter::class.java)
+		return http.build()
+	}
+
+}
+`;
+}
+
+export const iAuthProxySpringBootMicroservice = (packagePath: string) => {
+	return `package ${packagePath}.security
+
+import org.springframework.cloud.openfeign.FeignClient
+import org.springframework.http.ResponseEntity
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RequestHeader
+
+import org.pechblenda.security.IAuthTokenProxy
+import org.pechblenda.service.InternalResponse
+
+@FeignClient(name= "pechblenda-auth", path = "/rest")
+interface IAuthProxy: IAuthTokenProxy {
+
+\t@GetMapping(path = ["/auth/validate-token"])
+\toverride fun validateToken(
+\t\t@RequestHeader("Authorization") token: String
+\t): ResponseEntity<InternalResponse>
+
+}
+`;
 }
